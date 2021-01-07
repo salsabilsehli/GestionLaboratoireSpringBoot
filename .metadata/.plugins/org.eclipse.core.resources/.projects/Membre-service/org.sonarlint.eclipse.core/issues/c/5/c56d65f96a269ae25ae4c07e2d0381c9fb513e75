@@ -1,0 +1,21 @@
+
+ˆ	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾©ïíûÿÿÿÿ8ö£àšØ.HºRMINORZ
+CODE_SMELL
+ˆ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ†Âôøÿÿÿÿ8ö£àšØ.H·RMINORZ
+CODE_SMELL
+…	java:S116"SRename this field "event_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç“Å™8ı·İšØ.H³RMINORZ
+CODE_SMELL
+€	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³°µÜ8ö£àšØ.H½RMINORZ
+CODE_SMELL
+	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(è¯àY8ö£àšØ.H»RMINORZ
+CODE_SMELL
+ˆ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÄ¹ùÿÿÿÿ8ö£àšØ.H¹RMINORZ
+CODE_SMELL
+Œ	java:S116"ZRename this field "organisateur_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†Ç±í8ı·İšØ.H´RMINORZ
+CODE_SMELL
+…	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾©ïíûÿÿÿÿ8ö£àšØ.H¾RMINORZ
+CODE_SMELL
+ˆ	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ†Âôøÿÿÿÿ8ö£àšØ.H¸RMINORZ
+CODE_SMELL
+…	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÄ¹ùÿÿÿÿ8ö£àšØ.H¼RMINORZ
+CODE_SMELL

@@ -1,0 +1,15 @@
+
+g	java:S125\"<This block of commented-out lines of code should be removed.(÷ö»ãHŒRMAJORZ
+CODE_SMELL
+U
+java:S1481f")Remove this unused "etds" local variable.(œü‰÷HRMINORZ
+CODE_SMELL
+z
+java:S1192A"FDefine a constant instead of duplicating this literal "sss55" 3 times.(ÍÛ½ºúÿÿÿÿHRCRITICALZ
+CODE_SMELL
+k
+java:S1854f"8Remove this useless assignment to local variable "etds".(œü‰÷8šûÄË×.HRMAJORZ
+CODE_SMELL
+b
+java:S1128"1Remove this unused import 'java.util.Collection'.(¹ÉĞšùÿÿÿÿHRMINORZ
+CODE_SMELL

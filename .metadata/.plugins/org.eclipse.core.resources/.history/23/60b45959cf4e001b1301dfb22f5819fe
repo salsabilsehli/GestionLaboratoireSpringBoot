@@ -1,0 +1,145 @@
+package com.example.demo;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+import java.util.Collection;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+
+import com.example.demo.dao.EtudiantRepository;
+import com.example.demo.dao.MemberRepository;
+import com.example.demo.entities.EnseignantChercheur;
+import com.example.demo.entities.Etudiant;
+import com.example.demo.entities.Membre;
+import com.example.demo.proxies.EvenementProxy;
+import com.example.demo.proxies.OutilProxy;
+import com.example.demo.proxies.PublicationProxy;
+import com.example.demo.service.IMemberService;
+
+@SpringBootApplication
+@EnableDiscoveryClient
+@EnableFeignClients
+@EnableEurekaClient
+public class MembresApplication implements CommandLineRunner {
+
+	@Autowired
+	private MemberRepository memberRepository;
+
+	@Autowired
+	private EtudiantRepository etudiantRepository;
+
+	@Autowired
+	IMemberService memberService;
+
+	@Autowired
+	PublicationProxy publicationProxy;
+	
+	@Autowired
+	EvenementProxy eventProxy;
+	
+	@Autowired
+	OutilProxy outilproxy;
+
+	public static void main(String[] args) {
+		SpringApplication.run(MembresApplication.class, args);
+
+	}
+
+	public void run(String... args) throws ParseException {
+
+		// ************* Test Dao ************//
+
+		SimpleDateFormat dateFormattor = new SimpleDateFormat("yyyy-mm-dd");
+		Date date1 = dateFormattor.parse("1997-11-24");
+		Date date4 = dateFormattor.parse("1986-06-02");
+		Date date3 = dateFormattor.parse("1988-02-13");
+		Date date2 = dateFormattor.parse("1999-12-27");
+
+		Membre etud1 = new Etudiant("11100494", "Boudabous", "wiem", date1, "cv1", "wiem@gmail.com", "sss55", 111);
+
+		Membre etud2 = new Etudiant("12683599", "Sehli", "salsabil", date2, "cv2", "salsa@gmail.com", "pp!!3", 222);
+		memberRepository.save(etud1);
+		memberRepository.save(etud2);
+
+		Membre ens1 = new EnseignantChercheur("11111552", "salah", "ahmed", date3, "cv3", "s@gmail", "sss55", 333);
+		Membre ens2 = new EnseignantChercheur("33658954", "Hedi", "mounir", date4, "cv3", "h@gmail", "sss55", 444);
+
+		memberRepository.save(ens1);
+		memberRepository.save(ens2);
+
+		memberRepository.findAll();
+		memberRepository.findById(2L);
+		ens1.setPassword("kkll");
+		memberRepository.save(ens1);
+		memberService.deleteMember(ens2.getId());
+
+		// *********** Test service ********************//
+
+		// Update a Member
+		Membre m = memberService.findMember(1L);
+
+		m.setCv("cv1.pdf");
+		memberService.updateMember(m);
+
+		// Delete a Member
+		// memberService.deleteMember(2L);
+
+		Long id1 = etud1.getId();
+		Long id2 = etud2.getId();
+		Long idens = ens1.getId();
+
+		memberService.affecterenseignantToetudiant(id1, idens);
+		memberService.affecterenseignantToetudiant(id2, idens);
+
+		EnseignantChercheur ens = (EnseignantChercheur) memberService.findMember(3L);
+
+		List<Etudiant> etds = etudiantRepository.findByEncadrant(ens);
+
+		// **********************proxy testing... ***************************//
+
+		// recuperer les publications de la bd publicationlabo
+
+		PublicationBean p1 = publicationProxy.recupererUnePub(1L).getContent(); // getContent() car resultat
+																						// EntityModel
+		PublicationBean p2 = publicationProxy.recupererUnePub(2L).getContent(); // getContent() car resultat
+																						// EntityModel
+
+		// affecter les pubs à l'auteur ens1
+		memberService.affecterauteurTopublication(ens1.getId(), p1.getId());
+		memberService.affecterauteurTopublication(ens1.getId(), p2.getId());
+
+		
+
+		// recuperer les evenements de la bd 
+
+		EvenementBean e1 = eventProxy.recupererUnEvenement(1L).getContent(); // getContent() car resultat
+																						// EntityModel
+		EvenementBean e2 = eventProxy.recupererUnEvenement(2L).getContent(); // getContent() car resultat
+		EvenementBean e3 = eventProxy.recupererUnEvenement(3L).getContent(); // getContent() car resultat
+													// EntityModel
+		
+		
+		memberService.affecterorganisateurToEvenement(ens1.getId(), e1.getId());
+		memberService.affecterorganisateurToEvenement(ens1.getId(), e2.getId());
+		memberService.affecterorganisateurToEvenement(ens1.getId(), e3.getId());
+		
+		memberService.affecterorganisateurToEvenement(etud1.getId(), e1.getId());
+		memberService.affecterorganisateurToEvenement(etud1.getId(), e2.getId());
+		memberService.affecterorganisateurToEvenement(etud2.getId(), e3.getId());
+		memberService.affecterorganisateurToEvenement(etud2.getId(), e2.getId());
+
+		OutilBean o1 = outilproxy.recupererUnOutil(1L).getContent();
+		System.out.println(o1.getId());
+		memberService.affecterOutilToMembre(ens1.getId(), o1.getId());
+		
+		
+		
+	}
+}

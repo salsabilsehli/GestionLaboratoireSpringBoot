@@ -1,0 +1,81 @@
+package com.example.demo.entities;
+
+import java.io.Serializable;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+
+
+@Entity
+public class Publication implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	@Temporal(TemporalType.DATE)
+	private Date Date;
+	private String titre;
+	private String type; //article de journal/manifestation/chapitre de livre/livre/poster..
+	private String lien;
+	private String sourcepdf;
+	
+	
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public Date getDate() {
+		return Date;
+	}
+	public void setDate(Date date) {
+		Date = date;
+	}
+	public String getTitre() {
+		return titre;
+	}
+	public void setTitre(String titre) {
+		this.titre = titre;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getLien() {
+		return lien;
+	}
+	public void setLien(String lien) {
+		this.lien = lien;
+	}
+	public String getSourcepdf() {
+		return sourcepdf;
+	}
+	public void setSourcepdf(String sourcepdf) {
+		this.sourcepdf = sourcepdf;
+	}
+	public Publication() {}
+	
+	public Publication(java.util.Date date, String titre, String type, String lien, String sourcepdf) {
+		super();
+		Date = date;
+		this.titre = titre;
+		this.type = type;
+		this.lien = lien;
+		this.sourcepdf = sourcepdf;
+	}
+}

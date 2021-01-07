@@ -1,0 +1,15 @@
+
+r
+java:S4684I"@Replace this persistent entity with a simple POJO or DTO object.(Ã½Ÿ–HéRCRITICALZVULNERABILITY
+w
+java:S4684h"@Replace this persistent entity with a simple POJO or DTO object.(óÙçşÿÿÿÿHíRCRITICALZVULNERABILITY
+¤
+java:S1845h"qRename method "updateMembre" to prevent any misunderstanding/clash with method "updatemembre" defined on line 94.(óÙçşÿÿÿÿHìRBLOCKERZ
+CODE_SMELL
+w
+java:S4684^"@Replace this persistent entity with a simple POJO or DTO object.(ßûÄ´ÿÿÿÿÿHëRCRITICALZVULNERABILITY
+r
+java:S4684@"@Replace this persistent entity with a simple POJO or DTO object.(³ˆæHêRCRITICALZVULNERABILITY
+y
+java:S4488 "HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Å³ª²ûÿÿÿÿHèRMINORZ
+CODE_SMELL

@@ -1,0 +1,34 @@
+
+`
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿH“RMINORZ
+CODE_SMELL
+e
+java:S1602¦",Remove useless curly braces around statement(×Œ¤êüÿÿÿÿ8±ûŞ¥Ø.H”RMINORZ
+CODE_SMELL
+’
+java:S2293»"YReplace the type specification in this constructor call with the diamond operator ("<>").(¤Æƒİûÿÿÿÿ8æší¥Ø.H•RMINORZ
+CODE_SMELL
+h
+java:S3655{"7Call "Optional#isPresent()" before accessing the value.(Áâòüÿÿÿÿ8©–ËĞ×.H–RMAJORZBUG
+d
+java:S3655¯"7Call "Optional#isPresent()" before accessing the value.(‰‹†¸8±ûŞ¥Ø.H—RMAJORZBUG
+\
+java:S3655r"7Call "Optional#isPresent()" before accessing the value.(¸ˆÓH˜RMAJORZBUG
+_
+java:S1602",Remove useless curly braces around statement(¢n8Š‘Ó×.H™RMINORZ
+CODE_SMELL
+d
+java:S3655˜"7Call "Optional#isPresent()" before accessing the value.(¿ôß8¢±À›Ø.HšRMAJORZBUG
+a
+java:S3655P"7Call "Optional#isPresent()" before accessing the value.(ĞŸÎúÿÿÿÿH›RMAJORZBUG
+’
+java:S2293¤"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÃŒõÈøÿÿÿÿ8±ûŞ¥Ø.HœRMINORZ
+CODE_SMELL
+e
+java:S1602½",Remove useless curly braces around statement(§àÚÿıÿÿÿÿ8™ÿÿœØ.HRMINORZ
+CODE_SMELL
+\
+java:S3655s"7Call "Optional#isPresent()" before accessing the value.(¬’ÿæHRMAJORZBUG
+
+java:S2293†"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ç¦ÓÌ8Š‘Ó×.HŸRMINORZ
+CODE_SMELL

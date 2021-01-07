@@ -1,0 +1,78 @@
+package com.example.demo.entities;
+
+import java.io.Serializable;
+import java.util.Collection;
+import java.util.Date;
+
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+import javax.persistence.OneToMany;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+@Entity
+@DiscriminatorValue("enseignant")
+public class EnseignantChercheur extends Membre implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@OneToMany(mappedBy = "encadrant")
+	@JsonIgnore
+	private Collection<Etudiant> etudiants;
+	
+	private final String type = "ens";
+	private String grade;
+	private String etablissement;
+
+	public EnseignantChercheur() {
+		super();
+	}
+	public EnseignantChercheur(String cin, String nom, String prenom, java.util.Date dateNaissance, String cv,
+			String Email, String password, int photo) {
+		super(cin, nom, prenom, dateNaissance, cv, Email, password, photo);
+
+	}
+
+	public EnseignantChercheur(Collection<Etudiant> etudiants, String grade, String etablissement) {
+		super();
+		this.etudiants = etudiants;
+		this.grade = grade;
+		this.etablissement = etablissement;
+	}
+
+	public Collection<Etudiant> getEtudiants() {
+		return etudiants;
+	}
+
+	public void setEtudiants(Collection<Etudiant> etudiants) {
+		this.etudiants = etudiants;
+	}
+
+	public String getEtablissement() {
+		return etablissement;
+	}
+
+	public void setEtablissement(String etablissement) {
+		this.etablissement = etablissement;
+	}
+
+	public EnseignantChercheur(String grade, String etablissement) {
+		super();
+		this.grade = grade;
+		this.etablissement = etablissement;
+	}
+
+	public String getGrade() {
+		return grade;
+	}
+
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+
+
+}

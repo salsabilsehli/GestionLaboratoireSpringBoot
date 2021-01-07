@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="Publication-service"/>
+<aop-project name="Outil-service"/>
+<aop-project name="proxyService"/>
+<aop-project name="Evenement-service"/>
+<aop-project name="ConfigServer"/>
+<aop-project name="Membre-service"/>
+<aop-project name="registryService"/>
+</aop-reference-model>

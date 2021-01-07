@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+<fullyQualifiedTypeName name="org.springframework.hateoas.EntityModel"/>
+<fullyQualifiedTypeName name="com.example.demo.entities.EnseignantChercheur"/>
+<fullyQualifiedTypeName name="com.example.demo.dao.EtudiantRepository"/>
+<fullyQualifiedTypeName name="com.example.demo.proxies.PublicationProxy"/>
+<fullyQualifiedTypeName name="com.example.demo.entities.PublicationMembreId"/>
+<fullyQualifiedTypeName name="com.example.demo.entities.Membre_Publication"/>
+<fullyQualifiedTypeName name="com.example.demo.dao.Membre_PublicationRepository"/>
+<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
+<fullyQualifiedTypeName name="feign.Param"/>
+<fullyQualifiedTypeName name="antlr.collections.List"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.example.demo.PublicationBean"/>
+<fullyQualifiedTypeName name="org.springframework.data.repository.query.Param"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="javax.persistence.Transient"/>
+<fullyQualifiedTypeName name="com.example.demo.entities.EventMembreId"/>
+<fullyQualifiedTypeName name="com.example.demo.dao.Evenement_MembreRepository"/>
+<fullyQualifiedTypeName name="com.example.demo.entities.Evenement_Membre"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.example.demo.EvenementBean"/>
+<fullyQualifiedTypeName name="com.example.demo.proxies.EvenementProxy"/>
+<fullyQualifiedTypeName name="org.springframework.cloud.netflix.eureka.EnableEurekaClient"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="org.springframework.data.rest.core.config.RepositoryRestConfiguration"/>
+<fullyQualifiedTypeName name="com.example.demo.entities.Evenement"/>
+<fullyQualifiedTypeName name="com.example.demo.entities.Outil"/>
+<fullyQualifiedTypeName name="javax.persistence.Embeddable"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.EmbeddedId"/>
+<fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
+<fullyQualifiedTypeName name="javax.persistence.MapsId"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="com.example.demo.entities.OutilMembreId"/>
+<fullyQualifiedTypeName name="com.example.demo.dao.Outil_MembreRepository"/>
+<fullyQualifiedTypeName name="com.example.demo.entities.Outil_Membre"/>
+<fullyQualifiedTypeName name="com.example.demo.OutilBean"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.example.demo.proxies.OutilProxy"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="javax.persistence.Column"/>
+</qualifiedTypeNameHistroy>

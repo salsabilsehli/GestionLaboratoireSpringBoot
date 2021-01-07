@@ -1,0 +1,19 @@
+
+^
+java:S1948S"(Make "Events" transient or serializable.(Ğ¿Ğ÷8ïñòšØ.HĞRCRITICALZ
+CODE_SMELL
+ˆ	java:S116V"QRename this field "Outils" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´¹Ì§ûÿÿÿÿ8›™ŸØ.HÔRMINORZ
+CODE_SMELL
+a
+java:S1948G"&Make "pubs" transient or serializable.(±¯¶ıÿÿÿÿ8ÊÂšÔ×.HÕRCRITICALZ
+CODE_SMELL
+c
+java:S1948V"(Make "Outils" transient or serializable.(´¹Ì§ûÿÿÿÿ8Ìü£ŸØ.HÑRCRITICALZ
+CODE_SMELL
+c
+java:S1128"2Remove this unused import 'javax.persistence.Lob'.(úÍá®üÿÿÿÿHÓRMINORZ
+CODE_SMELL
+ƒ	java:S116S"QRename this field "Events" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ¿Ğ÷8ïñòšØ.HÒRMINORZ
+CODE_SMELL
+q	java:S107%"AConstructor has 8 parameters, which is greater than 7 authorized.(õÍ‰…üÿÿÿÿHÏRMAJORZ
+CODE_SMELL

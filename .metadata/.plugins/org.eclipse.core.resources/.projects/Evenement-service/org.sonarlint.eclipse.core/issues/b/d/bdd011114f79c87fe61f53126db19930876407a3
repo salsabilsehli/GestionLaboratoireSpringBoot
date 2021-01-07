@@ -1,0 +1,8 @@
+
+t
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(Ëµˆ®HÊRMINORZ
+CODE_SMELL
+w
+java:S4684Q"@Replace this persistent entity with a simple POJO or DTO object.(ÄÐÄõÿÿÿÿÿHËRCRITICALZVULNERABILITY
+w
+java:S4684;"@Replace this persistent entity with a simple POJO or DTO object.(ðÊ ãüÿÿÿÿHÌRCRITICALZVULNERABILITY

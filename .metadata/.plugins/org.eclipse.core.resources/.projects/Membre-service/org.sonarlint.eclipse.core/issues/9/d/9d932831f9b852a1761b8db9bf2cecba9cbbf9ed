@@ -1,0 +1,14 @@
+
+Ž
+java:S1128"[Remove this unused import 'org.springframework.boot.web.servlet.ServletContextInitializer'.(œ®»˜8Ÿ„ˆÑì.H‡RMINORZ
+CODE_SMELL
+s	java:S125"<This block of commented-out lines of code should be removed.(Ý«—žøÿÿÿÿ8Ÿ„ˆÑì.HˆRMAJORZ
+CODE_SMELL
+s	java:S125"<This block of commented-out lines of code should be removed.(‰‘ìöýÿÿÿÿ8Ÿ„ˆÑì.H‰RMAJORZ
+CODE_SMELL
+l
+java:S1128"9Remove this unused import 'javax.servlet.ServletContext'.(á¡æÞ8Ÿ„ˆÑì.HŠRMINORZ
+CODE_SMELL
+n
+java:S1128";Remove this unused import 'javax.servlet.ServletException'.(Š‰™Œ8Ÿ„ˆÑì.H‹RMINORZ
+CODE_SMELL

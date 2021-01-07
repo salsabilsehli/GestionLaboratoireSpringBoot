@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.example.demo.dao.Evenement_Membre&apos; to &apos;Evenement_MembreRepository&apos;&#x0D;&#x0A;- Original project: &apos;Membre-service&apos;&#x0D;&#x0A;- Original element: &apos;com.example.demo.dao.Evenement_Membre&apos;&#x0D;&#x0A;- Renamed element: &apos;com.example.demo.dao.Evenement_MembreRepository&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Evenement_Membre&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.example.demo.dao{Evenement_Membre.java[Evenement_Membre" matchStrategy="1" name="Evenement_MembreRepository" qualified="false" references="true" similarDeclarations="false" stamp="1604228667564" textual="false" version="1.0"/>
+</session>
